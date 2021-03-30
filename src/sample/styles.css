@@ -1,0 +1,134 @@
+.GridPane {
+	-fx-border-insets: 50px;
+}
+
+.button {
+	-fx-background-radius: 30px;
+	
+	-fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.3) , 1,0,3,5);
+	-fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+    -fx-margin-left: 0px;
+}
+
+.color1 {
+	-fx-background-color: rgb(255, 240, 199);
+}
+
+.color2 {
+	-fx-background-color: rgb(140, 221, 255);
+}
+
+.color3 {
+	-fx-background-color: rgb(217, 109, 82);
+}
+
+.colorProceed {
+	-fx-background-color: rgb(154, 92, 224);
+}
+
+.buttonWithImage {
+    -fx-background-image: url('plus3.png');
+    -fx-background-size: 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 8px;
+}
+
+.titled-pane 
+{
+    -fx-skin: "com.sun.javafx.scene.control.skin.TitledPaneSkin";
+    -fx-text-fill: -fx-text-base-color;
+}
+.titled-pane:focused 
+{
+    /*-fx-text-fill: rgba(0, 0, 0, 1);*/
+}
+.titled-pane > .title 
+{
+    -fx-background-color: rgb(255, 240, 199);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+    -fx-text-fill: rgba(0, 0, 0, 1);
+
+    -fx-background-radius: 30px;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.3) , 1,0,3,5);
+    -fx-padding: 5px;
+    -fx-border-insets: 1px;
+    -fx-background-insets: 1px;
+    -fx-margin-left: 0px;
+}
+
+.titled-pane:focused > .title
+{
+    -fx-color: -fx-focus-color;
+}
+
+.titled-pane > .title > .arrow-button 
+{
+    -fx-background-color: null;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0.0em 0.25em 0.0em 0.0em; /* 0 3 0 0 */
+    visibility: hidden;
+}
+
+.titled-pane > .title > .arrow-button .arrow 
+{
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.25em 0.3125em 0.25em 0.3125em; /* 3 3.75 3 3.75 */
+    -fx-shape: "M 0 0 h 7 l -3.5 4 z";
+}
+
+.titled-pane:collapsed > .title > .arrow-button .arrow 
+{
+    -fx-rotate: -90;
+}
+
+.titled-pane > *.content
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0, 0 1 1 1;
+    -fx-padding: 0.167em;
+ }
+
+.titled-pane:focused > .title > .arrow-button .arrow 
+{
+    -fx-background-color: white;
+}
+
+.radio-button {
+    -fx-text-fill: #f5f5f5;
+}
+
+.text-field {
+    -fx-background-radius: 30px;
+
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.3) , 1,0,3,5);
+    -fx-padding: 5px;
+    -fx-border-insets: 1px;
+    -fx-background-insets: 1px;
+    -fx-margin-left: 0px;
+
+    -fx-border-color: rgba(0, 0, 0, 0.9);
+    -fx-border-insets: 1px;
+    -fx-border-radius: 30px;
+}
+
+.line {
+    -fx-fill: rgba(255, 255, 255, 0.1);
+    -fx-stroke: rgba(255, 255, 255, 0.1);
+}
+
+.radio-button .radio {
+    -fx-selected-color: yellow;
+    -fx-unselected-color: blue;
+}
+
+.radio-button:selected .radio .dot {
+    -fx-background-color: rgba(0, 0, 0, 0.9);
+    -fx-background-insets: 1px;
+}

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.ToggleGroup?>
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="720.0" style="-fx-background-color: transparent;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <fx:define>
+      <ToggleGroup fx:id="genderToggleGroup" />
+   </fx:define>
+   <AnchorPane fx:id="AnchorPane" prefHeight="600.0" prefWidth="704.0" style="-fx-background-color: linear-gradient(rgb(241, 182, 177), rgb(197, 137, 160), rgb(153, 94, 143), rgb(109, 52, 125), rgb(62, 7, 107));">
+      <Label text="Введите необходимые параметры для анализа:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Accordion cacheShape="false" centerShape="false" layoutX="10.0" layoutY="170.0" nodeOrientation="LEFT_TO_RIGHT" scaleShape="false" style="-fx-background-color: transparent;">
+         <panes>
+            <TitledPane expanded="false" prefWidth="350.0" text="+ Как часто вы употребляете свежие овощи?">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <AnchorPane prefHeight="122.0" prefWidth="214.0">
+                  <RadioButton layoutY="5.0" mnemonicParsing="false" text="Каждый день">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="35.0" mnemonicParsing="false" text="Несколько раз в неделю">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="65.0" mnemonicParsing="false" text="Один или два раза в неделю">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="95.0" mnemonicParsing="false" text="Редко">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+               </AnchorPane>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </TitledPane>
+            <TitledPane expanded="false" prefWidth="300.0" text="+ Как часто вы употребляете сладости?">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <AnchorPane prefHeight="122.0" prefWidth="214.0">
+                  <RadioButton layoutY="5.0" mnemonicParsing="false" text="Каждый день">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="35.0" mnemonicParsing="false" text="Несколько раз в неделю">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="65.0" mnemonicParsing="false" text="Один или два раза в неделю">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="95.0" mnemonicParsing="false" text="Редко">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+               </AnchorPane>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </TitledPane>
+            <TitledPane expanded="false" prefWidth="300.0" text="+ Как часто вы употребляете мясо?">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <AnchorPane prefHeight="122.0" prefWidth="214.0">
+                  <RadioButton layoutY="5.0" mnemonicParsing="false" text="Каждый день">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="35.0" mnemonicParsing="false" text="Несколько раз в неделю">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="65.0" mnemonicParsing="false" text="Один или два раза в неделю">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="95.0" mnemonicParsing="false" text="Редко">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+               </AnchorPane>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </TitledPane>
+            <TitledPane expanded="false" prefWidth="300.0" text="+ Как часто вы употребляете рыбу?">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <AnchorPane prefHeight="122.0" prefWidth="214.0">
+                  <RadioButton layoutY="5.0" mnemonicParsing="false" text="Каждый день">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="35.0" mnemonicParsing="false" text="Несколько раз в неделю">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="65.0" mnemonicParsing="false" text="Один или два раза в неделю">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutY="95.0" mnemonicParsing="false" text="Редко">
+                     <padding>
+                        <Insets bottom="6.0" left="10.0" top="6.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+               </AnchorPane>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </TitledPane>
+         </panes>
+      </Accordion>
+      <TextField layoutX="400.0" layoutY="30.0" prefHeight="34.0" prefWidth="80.0" promptText="Возраст">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="500.0" layoutY="30.0" prefHeight="34.0" prefWidth="60.0" promptText="Рост">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="580.0" layoutY="30.0" prefHeight="34.0" prefWidth="60.0" promptText="Вес">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Line endX="315.0" layoutX="386.0" layoutY="146.0" startX="-386.0" stroke="#dddddd" strokeWidth="3.0" />
+      <TitledPane collapsible="false" layoutX="10.0" layoutY="35.0" prefWidth="350.0" text="   + Пол">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <AnchorPane layoutX="5.0">
+            <RadioButton layoutY="5.0" mnemonicParsing="false" text="Мужской" toggleGroup="$genderToggleGroup">
+               <padding>
+                  <Insets bottom="6.0" left="10.0" top="6.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutY="35.0" mnemonicParsing="false" text="Женский" toggleGroup="$genderToggleGroup">
+               <padding>
+                  <Insets bottom="6.0" left="10.0" top="6.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </RadioButton>
+         </AnchorPane>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </TitledPane>
+   </AnchorPane>
+</ScrollPane>
