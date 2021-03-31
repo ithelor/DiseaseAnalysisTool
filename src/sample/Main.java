@@ -12,9 +12,9 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        ScrollPane root = FXMLLoader.<ScrollPane>load(getClass().getResource("sample.fxml"));
+        ScrollPane root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 
-        Scene scene = new Scene(root, 720, 580); //               <-- \
+        Scene scene = new Scene(root, 820, 600); //               <-- \
 //        stage.setMinWidth(640); stage.setMinHeight(560);     // doesn't match --> /
 
         stage.getIcons().add(new Image("/sample/icon.png"));
